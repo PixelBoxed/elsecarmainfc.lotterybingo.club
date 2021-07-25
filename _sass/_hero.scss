@@ -1,7 +1,7 @@
 .hero {
     align-items: center;
     display: flex;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     padding-top: 6rem;
     position: relative;
@@ -46,9 +46,15 @@
 }
 
 .hero-button {
+    background-color: $color--primary;
+    border-radius: .5rem;
+    color: $color--background;
     display: inline-block;
     margin: auto;
     margin-top: 1rem;
+    &:hover {
+        background-color: lighten($color--primary, 10%);
+    }
 }
 
 
