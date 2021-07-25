@@ -1,7 +1,7 @@
 ---
 layout: gamecard
 title: "Gamecard"
-game: 2
+game: 3
 ---
 
 
@@ -59,7 +59,7 @@ game: 2
         Player {{ eachLine[1] }}
     </div>
     <div class="gamecard-id">
-        Line {{ eachLine[2] }}
+        <span class="gamecard-id-l">L</span><span class="gamecard-id-ine">ine&nbsp;</span>{{ eachLine[2] }}
     </div>
     <div class="gamecard-matches">
         {{ eachLine[0] }} matches

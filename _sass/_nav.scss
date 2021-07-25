@@ -13,7 +13,7 @@
     margin: auto;
     padding: 0px;
     position: absolute;
-    top: 5.2rem;
+    top: 5.6rem;
     width: 100%;
 
     .nav-link {
@@ -34,8 +34,38 @@
     padding: 1rem;
 }
 
+.navBurger {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: .6rem;
+  }
+  
+  .burgerBar1, .burgerBar2, .burgerBar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin-top: 6px;
+    transition: 0.4s;
+  }
+  
+  .navBurgerOpen .burgerBar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .navBurgerOpen .burgerBar2 {opacity: 0;}
+  
+  .navBurgerOpen .burgerBar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
 @media screen and (min-width: 1008px) {
 
+    .navBurger {
+        display: none;
+    }
+    
     .nav-control {
         display: none;
     }
@@ -53,6 +83,14 @@
         border-radius: .5rem;
         &:hover {
             background-color: darken($color--background, 10%);
+        }
+    }
+
+    .nav-link--focus {
+        background-color: $color--primary;
+        color: $color--background;
+        &:hover {
+            background-color: lighten($color--primary, 10%);
         }
     }
 } 

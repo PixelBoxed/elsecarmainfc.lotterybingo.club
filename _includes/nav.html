@@ -1,8 +1,55 @@
 <nav class="nav">
     <ul class="nav-list">
-        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="/gamecard" class="nav-link">Gamecard</a></li>
-        <li class="nav-item"><a href="/rules" class="nav-link">Rules</a></li>
-        <li class="nav-item"><a href="/archive" class="nav-link">Archive</a></li>
+        
+        <li class="nav-item">
+            <a href="/" class="nav-link">
+                <span class="material-icons">&#xe88a</span>
+                Home
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="/how-it-works/" class="nav-link">
+                <span class="material-icons">&#xe8b8</span>
+                How it works
+            </a>
+        </li>
+        
+        {% assign gameCount = site.games | size %}
+        {% if gameCount > 0 %}
+        <li class="nav-item">
+            <a href="/gamecard" class="nav-link">
+                <span class="material-icons">&#xea23</span>
+                Gamecard
+            </a>
+        </li>
+        {% endif %}
+
+        <!--
+        {% assign postCount = site.posts | size %}
+        {% if postCount > 0 %}
+        <li class="nav-item">
+            <a href="/news" class="nav-link">
+                <span class="material-icons">&#xef42</span>
+                News
+            </a>
+        </li>
+        {% endif %}
+        -->
+
+        <li class="nav-item">
+            <a href="/rules/" class="nav-link">
+                <span class="material-icons">&#xe6b1</span>
+                Rules
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{{ site.join }}" target="_blank" class="nav-link nav-link--focus">
+                <span class="material-icons">&#xe037</span>
+                Join
+            </a>
+        </li>
+        
     </ul>
 </nav>

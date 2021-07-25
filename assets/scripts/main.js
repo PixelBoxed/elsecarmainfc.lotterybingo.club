@@ -117,6 +117,15 @@ function closeNav() {
     $('.nav-list--open').addClass('nav-list').removeClass('nav-list--open');
 }
 
+function navToggle(navBurger) {
+  navBurger.classList.toggle("navBurgerOpen");
+  if ($('.nav-list--open').length) {
+    closeNav();
+  } else {
+      openNav();
+  }
+}
+
 
 
 /* ============================================================================ */
@@ -129,9 +138,8 @@ function closeNav() {
 /* Date: 5th May 2021                                                           */
 /* ============================================================================ */
 
-$('nav').prepend('<ul class="nav-control"><li class="nav-item"><a href="javascript:void(0);" class="nav-link nav-toggle" onclick="toggleNav()">Menu</a></li></ul>');
-
-
+//$('nav').prepend('<ul class="nav-control"><li class="nav-item"><a href="javascript:void(0);" class="nav-link nav-toggle" onclick="toggleNav()">Menu</a></li></ul>');
+$('nav').prepend('<div class="navBurger" onclick="navToggle(this)"><div class="burgerBar1"></div><div class="burgerBar2"></div><div class="burgerBar3"></div></div>');
 
 
 

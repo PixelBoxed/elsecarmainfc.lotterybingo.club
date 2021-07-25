@@ -1,0 +1,21 @@
+.wrapper--full-width {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    width: 100%;
+}
+
+.wrapper--content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    max-width: 76.875rem;
+    width: 100%;
+}
+
+@media screen and (min-width: $size--widescreen) {
+    
+    .wrapper--full-width {
+        max-width: 90%;
+    }
+}

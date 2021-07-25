@@ -1,6 +1,6 @@
 header {
     background: $color--background;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
@@ -13,7 +13,7 @@ header {
 }
   
 .header-up {
-    top: -5rem; // same as header height. use variables in LESS/SASS
+    top: -6.3rem; // same as header height. use variables in LESS/SASS
 }
 
 .header-brand {
@@ -24,6 +24,7 @@ header {
 .header-logo {
     float: left;
     margin-right: .5rem;
+    margin-top: .3rem;
     max-height: 2.4rem;
 }
 
@@ -32,8 +33,12 @@ header {
     margin-top: 1rem;
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: $size--desktop) {
     .header-nav {
         margin-right: 0;
+    }
+
+    header {
+        padding-bottom: 1rem;
     }
 }

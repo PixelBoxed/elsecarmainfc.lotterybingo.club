@@ -1,11 +1,21 @@
-{% assign latestGame = site.data.games.last.number %}
-{% assign latestDraw = site.data.draws.last.draw %}
-{% assign latestResult = site.data.draws.last.date %}
-
-<div class="hero-image">
-  <div class="hero-text">
-    <h2 class="hero-heading">Game {{ latestGame }}: Draw {{ latestDraw }}</h2>
-    <p>{{ latestResult | date: "%A, %d %B %Y"  }}</p>
-    <a href="/gamecard" class="hero-button">View the gamecard</a>
+<div class="hero">
+  <div class="wrapper-content">
+    <div class="hero-content">
+        
+        {% assign postCount = site.posts | size %}
+        {% if postCount > 0 %}
+        <h2 class="hero-heading">{{ site.posts[0].title }}</h2>
+        <p class="hero-text">{{ site.posts[0].teaser }}</p>
+        <a href="{{ site.posts[0].redirect | default: site.posts[0].url }}">
+          <p class="hero-button nav-link nav-link--focus">Read more</p>
+        </a>
+        {% else if %}
+        <h2 class="hero-heading">Show your support</h2>
+        <p class="hero-text">With a chance to win a cash prize on every game!</p>
+        <a href="{{ site.join }}" target="_blank">
+          <p class="hero-button nav-link nav-link--focus">Join now</p>
+        </a>
+        {% endif %}
+    </div>
   </div>
 </div>

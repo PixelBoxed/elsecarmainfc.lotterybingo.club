@@ -5,8 +5,11 @@ body {
     font-size: 1.2rem;
     font-weight: 300;
     margin: 0px;
-    padding-top: 5rem; // same as header height
-  
+ 
+}
+
+button {
+    cursor: pointer;
 }
 
 a {
@@ -17,6 +20,25 @@ a {
     }
 }
 
+.material-icons {
+    line-height: 0;
+    vertical-align: sub;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
 .container--content {
     margin: auto;
     padding: 1rem;
@@ -26,8 +48,6 @@ a {
 
 .container--title {
     background-color: $color--background;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
     padding-top: 1rem;
     text-align: center;
 }
@@ -37,6 +57,7 @@ a {
     .container--title {
         text-align: left;
     }
+    
 }
 
 .container--page {
@@ -44,6 +65,10 @@ a {
     padding-right: 1rem;
     margin: auto;
     max-width: 76.875rem;
+}
+
+main {
+    margin-top: 6rem;
 }
 
 .row {
@@ -85,10 +110,6 @@ a {
 .horiz-padding--half {
     padding-left: .5rem;
     padding-right: .5rem;
-}
-
-.body {
-    padding-top: 2rem;
 }
 
 .hidden {
