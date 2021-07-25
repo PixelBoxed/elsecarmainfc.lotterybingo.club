@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kicking off August 8th
+title: Kick off with us on August 8th
 teaser: Join now to support your team and be in with a chance to win!
 ---
 
