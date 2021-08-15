@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Results of 8th August
+title: Results of 7th August
 teaser: Take a look at our gamecard to see how your lines are doing.
 redirect: /gamecard
 ---
