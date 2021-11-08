@@ -1,7 +1,7 @@
 ---
 layout: gamecard
 title: "Gamecard"
-game: 2
+game: 1
 ---
 
 
