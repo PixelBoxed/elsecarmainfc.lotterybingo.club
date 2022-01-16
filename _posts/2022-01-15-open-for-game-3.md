@@ -6,9 +6,9 @@ teaser: We're taking applications for our next game right now.
 
 Game 2 of our {{ site.name }} Lottery Bingo games was won on Saturday, 15th January 2022. Congratulations to player EMLB008 who scooped £181.50 after only 11 draws.
 
-If you'd like your chance to win, simply [join](https://forms.gle/GEkzAc9o6GSi95vf9) our next game before Saturday, 22nd January 2022. You can enter up to 10 lines of 8 numbers.
+If you'd like your chance to win, simply [join our next game](/join/) before Saturday, 22nd January 2022. You can enter up to 10 lines of 8 numbers.
 
-The joining link can be found at the top of this page and you'll be asked to provide a few contact details and your choices of numbers and lines. See [how it works](/how-it-works) for more information.
+The joining link can be found at the top of this page and you'll be asked to provide a few contact details and your choices of numbers and lines. See [how it works](/how-it-works/) for more information.
 
 We'll register your line(s) into the game and ask you to set up a weekly Standing Order to cover their cost of £1 per line per week. We'll send you all the details you need for this. There's no long term committment - you can cancel and let us know at anytime if you need to withdraw your numbers for any reason.
 

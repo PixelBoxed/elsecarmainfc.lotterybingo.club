@@ -1,4 +1,4 @@
-url: "https://elsecarmainfc.lotterybingo.club"
+url: ""
 baseurl: "/"
 permalink: /news/:title:output_ext
 
@@ -13,3 +13,9 @@ website: "https://www.elsecarmainfc.co.uk/"
 address: "13 Armroyd Ln, Elsecar, Barnsley S74 8ES"
 map-coords: "53.49459367844664, -1.424442542330539"
 join: "https://forms.gle/GEkzAc9o6GSi95vf9"
+
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
